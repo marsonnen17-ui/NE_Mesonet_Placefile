@@ -14,6 +14,8 @@ def create_placefile():
             f.write("Refresh: 5\n")
             f.write("Threshold: 999\n")
             f.write("Title: NE Mesonet (Wind Barbs)\n")
+            # ADD THIS LINE: Font Number 1, 12px height, Bold (1), "Arial"
+            f.write("Font: 1, 12, 1, \"Arial\"\n")
             f.write("IconFile: 1, 32, 32, 16, 16, \"https://raw.githubusercontent.com/pbrady/Placefiles/master/wind_barbs.png\"\n\n")
 
             for station in data:
