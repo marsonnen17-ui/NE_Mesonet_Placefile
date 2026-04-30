@@ -33,7 +33,7 @@ def create_placefile():
                 if any(v is None for v in [lat, lon, temp, wind_kts, wind_dir]):
                     continue
 
-                # --- Wind Barb Calculation ---
+                # --- Wind Barb Calculation --- Potentially remove
                 icon_index = int(round(wind_kts / 5.0))
                 if icon_index > 25: icon_index = 25
                 if icon_index < 0: icon_index = 0
