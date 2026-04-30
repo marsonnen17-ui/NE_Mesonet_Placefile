@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
 
       - name: Run script
-        run: python script.py
+        run: python Script.py
 
       - name: Commit and push changes
         run: |
