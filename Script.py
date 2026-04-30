@@ -3,7 +3,7 @@ import os
 
 # Configuration
 URL = "https://mesonet.agron.iastate.edu/api/1/currents.json?network=NE_DCP"
-OUTPUT_FILE = "NE_mesonet.txt"
+OUTPUT_FILE = "NE_Mesonet.txt"
 
 def create_placefile():
     try:
