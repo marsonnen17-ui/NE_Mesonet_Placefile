@@ -35,7 +35,6 @@ def create_placefile():
 
                 # --- Wind Barb Calculation --- Potentially remove
                 icon_index = int(round(wind_kts / 5.0))
-                if icon_index > 25: icon_index = 25
                 if icon_index < 0: icon_index = 0
                 
                 wind_mph = round(wind_kts * 1.15, 1)
