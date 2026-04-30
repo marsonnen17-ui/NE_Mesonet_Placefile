@@ -1,0 +1,70 @@
+Refresh: 5
+Threshold: 999
+Title: NE Mesonet (Wind Barbs)
+Font: 1, 12, 1, "Arial"
+Font: 0, 12, 1, "Arial"
+IconFile: 1, 32, 32, 16, 16, "https://raw.githubusercontent.com/pbrady/Placefiles/master/wind_barbs.png"
+
+Object: 42.6894444444, -101.1283333333
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "53"
+  Icon: 0, 0, 57, 1, 2, "MKVN1: 53.0F, 14.0mph"
+End:
+
+Object: 41.8, -102.47
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "56"
+  Icon: 0, 0, 329, 1, 2, "RESN1: 56.0F, 13.0mph"
+End:
+
+Object: 42.43, -103.74
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "53"
+  Icon: 0, 0, 356, 1, 0, "AGTN1: 53.0F, 2.0mph"
+End:
+
+Object: 42.7238, -102.972
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "53"
+  Icon: 0, 0, 342, 1, 2, "HRSN1: 53.0F, 9.0mph"
+End:
+
+Object: 42.9230555556, -103.7930555556
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "58"
+  Icon: 0, 0, 308, 1, 3, "MTRN1: 58.0F, 18.0mph"
+End:
+
+Object: 41.9178, -103.4842
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "0"
+  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.56F, 0.3mph"
+End:
+
+Object: 41.8294, -103.7081
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "58"
+  Icon: 0, 0, 244, 1, 1, "SBFN1: 58.0F, 6.0mph"
+End:
+
+Object: 41.9, -100.2667
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "54"
+  Icon: 0, 0, 346, 1, 2, "HSYN1: 54.0F, 11.0mph"
+End:
+
+Object: 42.4839, -100.4561
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "53"
+  Icon: 0, 0, 343, 1, 2, "VRFN1: 53.0F, 13.0mph"
+End:
+
