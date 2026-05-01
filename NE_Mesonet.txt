@@ -8,63 +8,63 @@ IconFile: 1, 32, 32, 16, 16, "https://raw.githubusercontent.com/pbrady/Placefile
 Object: 42.6894444444, -101.1283333333
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "38"
-  Icon: 0, 0, 186, 1, 1, "MKVN1: 38.0F, 8.0mph"
+  Text: -12, -12, 1, "57"
+  Icon: 0, 0, 126, 1, 1, "MKVN1: 57.0F, 3.0mph"
 End:
 
 Object: 41.8, -102.47
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "42"
-  Icon: 0, 0, 285, 1, 1, "RESN1: 42.0F, 8.0mph"
+  Text: -12, -12, 1, "57"
+  Icon: 0, 0, 340, 1, 2, "RESN1: 57.0F, 13.0mph"
 End:
 
 Object: 42.43, -103.74
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "42"
-  Icon: 0, 0, 234, 1, 0, "AGTN1: 42.0F, 0.0mph"
+  Text: -12, -12, 1, "58"
+  Icon: 0, 0, 5, 1, 0, "AGTN1: 58.0F, 1.0mph"
 End:
 
 Object: 42.7238, -102.972
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "46"
-  Icon: 0, 0, 298, 1, 1, "HRSN1: 46.0F, 6.0mph"
+  Text: -12, -12, 1, "57"
+  Icon: 0, 0, 328, 1, 2, "HRSN1: 57.0F, 11.0mph"
 End:
 
 Object: 41.9178, -103.4842
   Threshold: 999
   Color: 255 255 255
   Text: -12, -12, 1, "0"
-  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.37F, 0.1mph"
+  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.58F, 0.3mph"
 End:
 
 Object: 41.8294, -103.7081
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "42"
-  Icon: 0, 0, 280, 1, 0, "SBFN1: 42.0F, 2.0mph"
+  Text: -12, -12, 1, "60"
+  Icon: 0, 0, 253, 1, 0, "SBFN1: 60.0F, 2.0mph"
 End:
 
 Object: 41.9, -100.2667
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "44"
-  Icon: 0, 0, 63, 1, 1, "HSYN1: 44.0F, 5.0mph"
+  Text: -12, -12, 1, "54"
+  Icon: 0, 0, 37, 1, 1, "HSYN1: 54.0F, 4.0mph"
 End:
 
 Object: 42.4839, -100.4561
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "44"
-  Icon: 0, 0, 50, 1, 1, "VRFN1: 44.0F, 3.0mph"
+  Text: -12, -12, 1, "54"
+  Icon: 0, 0, 59, 1, 1, "VRFN1: 54.0F, 6.0mph"
 End:
 
 Object: 42.9230555556, -103.7930555556
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "46"
-  Icon: 0, 0, 322, 1, 1, "MTRN1: 46.0F, 5.0mph"
+  Text: -12, -12, 1, "60"
+  Icon: 0, 0, 314, 1, 2, "MTRN1: 60.0F, 13.0mph"
 End:
 
