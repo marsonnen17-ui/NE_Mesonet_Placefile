@@ -8,63 +8,63 @@ IconFile: 1, 32, 32, 16, 16, "https://raw.githubusercontent.com/pbrady/Placefile
 Object: 42.6894444444, -101.1283333333
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "64"
-  Icon: 0, 0, 11, 1, 2, "MKVN1: 64.0F, 12.0mph"
+  Text: -12, -12, 1, "70"
+  Icon: 0, 0, 315, 1, 2, "MKVN1: 70.0F, 14.0mph"
 End:
 
 Object: 41.8, -102.47
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "62"
-  Icon: 0, 0, 227, 1, 2, "RESN1: 62.0F, 12.0mph"
+  Text: -12, -12, 1, "69"
+  Icon: 0, 0, 253, 1, 2, "RESN1: 69.0F, 14.0mph"
 End:
 
 Object: 42.43, -103.74
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "63"
-  Icon: 0, 0, 255, 1, 2, "AGTN1: 63.0F, 11.0mph"
+  Text: -12, -12, 1, "73"
+  Icon: 0, 0, 285, 1, 2, "AGTN1: 73.0F, 13.0mph"
 End:
 
 Object: 42.7238, -102.972
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "63"
-  Icon: 0, 0, 283, 1, 1, "HRSN1: 63.0F, 8.0mph"
-End:
-
-Object: 42.9230555556, -103.7930555556
-  Threshold: 999
-  Color: 255 255 255
-  Text: -12, -12, 1, "64"
-  Icon: 0, 0, 249, 1, 1, "MTRN1: 64.0F, 8.0mph"
+  Text: -12, -12, 1, "72"
+  Icon: 0, 0, 310, 1, 2, "HRSN1: 72.0F, 11.0mph"
 End:
 
 Object: 41.9178, -103.4842
   Threshold: 999
   Color: 255 255 255
   Text: -12, -12, 1, "0"
-  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.57F, 0.2mph"
+  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.7F, 0.3mph"
 End:
 
 Object: 41.8294, -103.7081
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "62"
-  Icon: 0, 0, 267, 1, 0, "SBFN1: 62.0F, 1.0mph"
+  Text: -12, -12, 1, "74"
+  Icon: 0, 0, 270, 1, 2, "SBFN1: 74.0F, 10.0mph"
 End:
 
 Object: 41.9, -100.2667
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "60"
-  Icon: 0, 0, 222, 1, 2, "HSYN1: 60.0F, 11.0mph"
+  Text: -12, -12, 1, "70"
+  Icon: 0, 0, 236, 1, 2, "HSYN1: 70.0F, 10.0mph"
 End:
 
 Object: 42.4839, -100.4561
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "60"
-  Icon: 0, 0, 210, 1, 2, "VRFN1: 60.0F, 13.0mph"
+  Text: -12, -12, 1, "71"
+  Icon: 0, 0, 226, 1, 2, "VRFN1: 71.0F, 13.0mph"
+End:
+
+Object: 42.9230555556, -103.7930555556
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "75"
+  Icon: 0, 0, 302, 1, 3, "MTRN1: 75.0F, 15.0mph"
 End:
 
