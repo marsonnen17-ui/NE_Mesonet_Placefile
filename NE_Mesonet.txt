@@ -8,63 +8,63 @@ IconFile: 1, 32, 32, 16, 16, "https://raw.githubusercontent.com/pbrady/Placefile
 Object: 42.6894444444, -101.1283333333
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "76"
-  Icon: 0, 0, 85, 1, 3, "MKVN1: 76.0F, 18.0mph"
+  Text: -12, -12, 1, "55"
+  Icon: 0, 0, 40, 1, 1, "MKVN1: 55.0F, 3.0mph"
 End:
 
 Object: 41.8, -102.47
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "74"
-  Icon: 0, 0, 297, 1, 3, "RESN1: 74.0F, 15.0mph"
+  Text: -12, -12, 1, "52"
+  Icon: 0, 0, 9, 1, 1, "RESN1: 52.0F, 5.0mph"
 End:
 
 Object: 42.43, -103.74
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "76"
-  Icon: 0, 0, 313, 1, 2, "AGTN1: 76.0F, 11.0mph"
+  Text: -12, -12, 1, "50"
+  Icon: 0, 0, 60, 1, 1, "AGTN1: 50.0F, 5.0mph"
 End:
 
 Object: 42.7238, -102.972
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "73"
-  Icon: 0, 0, 310, 1, 3, "HRSN1: 73.0F, 17.0mph"
+  Text: -12, -12, 1, "55"
+  Icon: 0, 0, 132, 1, 0, "HRSN1: 55.0F, 1.0mph"
 End:
 
 Object: 41.9178, -103.4842
   Threshold: 999
   Color: 255 255 255
   Text: -12, -12, 1, "0"
-  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.75F, 0.2mph"
+  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.51F, 0.3mph"
 End:
 
 Object: 41.8294, -103.7081
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "76"
-  Icon: 0, 0, 267, 1, 0, "SBFN1: 76.0F, 1.0mph"
+  Text: -12, -12, 1, "54"
+  Icon: 0, 0, 86, 1, 0, "SBFN1: 54.0F, 2.0mph"
 End:
 
 Object: 41.9, -100.2667
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "76"
-  Icon: 0, 0, 262, 1, 1, "HSYN1: 76.0F, 7.0mph"
+  Text: -12, -12, 1, "55"
+  Icon: 0, 0, 327, 1, 1, "HSYN1: 55.0F, 6.0mph"
 End:
 
 Object: 42.4839, -100.4561
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "75"
-  Icon: 0, 0, 255, 1, 2, "VRFN1: 75.0F, 11.0mph"
+  Text: -12, -12, 1, "52"
+  Icon: 0, 0, 341, 1, 1, "VRFN1: 52.0F, 6.0mph"
 End:
 
 Object: 42.9230555556, -103.7930555556
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "76"
-  Icon: 0, 0, 282, 1, 2, "MTRN1: 76.0F, 11.0mph"
+  Text: -12, -12, 1, "52"
+  Icon: 0, 0, 73, 1, 2, "MTRN1: 52.0F, 9.0mph"
 End:
 
