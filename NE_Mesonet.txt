@@ -9,62 +9,62 @@ Object: 42.6894444444, -101.1283333333
   Threshold: 999
   Color: 255 255 255
   Text: -12, -12, 1, "53"
-  Icon: 0, 0, 15, 1, 2, "MKVN1: 53.0F, 12.0mph"
+  Icon: 0, 0, 282, 1, 2, "MKVN1: 53.0F, 11.0mph"
 End:
 
 Object: 41.8, -102.47
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "48"
-  Icon: 0, 0, 8, 1, 1, "RESN1: 48.0F, 6.0mph"
+  Text: -12, -12, 1, "49"
+  Icon: 0, 0, 342, 1, 1, "RESN1: 49.0F, 4.0mph"
 End:
 
 Object: 42.43, -103.74
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "34"
-  Icon: 0, 0, 260, 1, 1, "AGTN1: 34.0F, 6.0mph"
+  Text: -12, -12, 1, "31"
+  Icon: 0, 0, 252, 1, 0, "AGTN1: 31.0F, 1.0mph"
 End:
 
 Object: 42.7238, -102.972
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "52"
-  Icon: 0, 0, 211, 1, 2, "HRSN1: 52.0F, 9.0mph"
+  Text: -12, -12, 1, "54"
+  Icon: 0, 0, 287, 1, 1, "HRSN1: 54.0F, 6.0mph"
 End:
 
 Object: 41.9178, -103.4842
   Threshold: 999
   Color: 255 255 255
   Text: -12, -12, 1, "0"
-  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.48F, 0.1mph"
+  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.49F, 0.1mph"
 End:
 
 Object: 41.8294, -103.7081
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "47"
-  Icon: 0, 0, 300, 1, 0, "SBFN1: 47.0F, 0.0mph"
+  Text: -12, -12, 1, "52"
+  Icon: 0, 0, 300, 1, 0, "SBFN1: 52.0F, 0.0mph"
 End:
 
 Object: 41.9, -100.2667
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "51"
-  Icon: 0, 0, 224, 1, 1, "HSYN1: 51.0F, 5.0mph"
+  Text: -12, -12, 1, "47"
+  Icon: 0, 0, 273, 1, 1, "HSYN1: 47.0F, 4.0mph"
 End:
 
 Object: 42.4839, -100.4561
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "49"
-  Icon: 0, 0, 231, 1, 1, "VRFN1: 49.0F, 4.0mph"
+  Text: -12, -12, 1, "50"
+  Icon: 0, 0, 273, 1, 1, "VRFN1: 50.0F, 5.0mph"
 End:
 
 Object: 42.9230555556, -103.7930555556
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "46"
-  Icon: 0, 0, 212, 1, 2, "MTRN1: 46.0F, 10.0mph"
+  Text: -12, -12, 1, "41"
+  Icon: 0, 0, 237, 1, 1, "MTRN1: 41.0F, 3.0mph"
 End:
 
