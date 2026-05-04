@@ -8,63 +8,63 @@ IconFile: 1, 32, 32, 16, 16, "https://raw.githubusercontent.com/pbrady/Placefile
 Object: 42.6894444444, -101.1283333333
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "60"
-  Icon: 0, 0, 352, 1, 3, "MKVN1: 60.0F, 18.0mph"
-End:
-
-Object: 41.8, -102.47
-  Threshold: 999
-  Color: 255 255 255
-  Text: -12, -12, 1, "62"
-  Icon: 0, 0, 29, 1, 4, "RESN1: 62.0F, 23.0mph"
-End:
-
-Object: 42.43, -103.74
-  Threshold: 999
-  Color: 255 255 255
-  Text: -12, -12, 1, "58"
-  Icon: 0, 0, 53, 1, 3, "AGTN1: 58.0F, 17.0mph"
-End:
-
-Object: 42.7238, -102.972
-  Threshold: 999
-  Color: 255 255 255
-  Text: -12, -12, 1, "55"
-  Icon: 0, 0, 23, 1, 3, "HRSN1: 55.0F, 17.0mph"
+  Text: -12, -12, 1, "61"
+  Icon: 0, 0, 102, 1, 3, "MKVN1: 61.0F, 16.0mph"
 End:
 
 Object: 41.9178, -103.4842
   Threshold: 999
   Color: 255 255 255
   Text: -12, -12, 1, "0"
-  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.64F, 0.6mph"
+  Icon: 0, 0, 96, 1, 0, "MDAN1: 0.64F, 0.4mph"
 End:
 
 Object: 41.8294, -103.7081
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "66"
-  Icon: 0, 0, 62, 1, 1, "SBFN1: 66.0F, 8.0mph"
+  Text: -12, -12, 1, "68"
+  Icon: 0, 0, 49, 1, 1, "SBFN1: 68.0F, 7.0mph"
 End:
 
 Object: 41.9, -100.2667
   Threshold: 999
   Color: 255 255 255
   Text: -12, -12, 1, "65"
-  Icon: 0, 0, 5, 1, 2, "HSYN1: 65.0F, 14.0mph"
+  Icon: 0, 0, 352, 1, 2, "HSYN1: 65.0F, 14.0mph"
 End:
 
 Object: 42.4839, -100.4561
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "62"
-  Icon: 0, 0, 356, 1, 2, "VRFN1: 62.0F, 14.0mph"
+  Text: -12, -12, 1, "59"
+  Icon: 0, 0, 337, 1, 3, "VRFN1: 59.0F, 15.0mph"
 End:
 
 Object: 42.9230555556, -103.7930555556
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "55"
-  Icon: 0, 0, 42, 1, 2, "MTRN1: 55.0F, 13.0mph"
+  Text: -12, -12, 1, "60"
+  Icon: 0, 0, 340, 1, 3, "MTRN1: 60.0F, 17.0mph"
+End:
+
+Object: 41.8, -102.47
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "63"
+  Icon: 0, 0, 19, 1, 3, "RESN1: 63.0F, 17.0mph"
+End:
+
+Object: 42.43, -103.74
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "60"
+  Icon: 0, 0, 26, 1, 2, "AGTN1: 60.0F, 9.0mph"
+End:
+
+Object: 42.7238, -102.972
+  Threshold: 999
+  Color: 255 255 255
+  Text: -12, -12, 1, "54"
+  Icon: 0, 0, 27, 1, 2, "HRSN1: 54.0F, 14.0mph"
 End:
 
