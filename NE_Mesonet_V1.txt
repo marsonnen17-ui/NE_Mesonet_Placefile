@@ -1,18 +1,18 @@
 Title: NE Mesonet (Wind Barbs)
 Refresh: 5
 Threshold: 999
-IconFile: 1, 32, 32, 16, 16, "http://www.spotternetwork.org/icon/wind_barbs.png"
+IconFile: 1, 32, 32, 16, 16, "https://github.com/marsonnen17-ui/NE_Mesonet_Placefile/blob/main/WindBarb.jpg"
 Font: 1, 12, 1, "Arial"
 Font: 0, 12, 1, "Arial"
 
 Object: 42.6894444444,-101.1283333333
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "52"
-  Icon: 0, 0, 257, 1, 2, "MKVN1: 52.0F, 11.0mph"
+  Text: -12, -12, 1, "56"
+  Icon: 0, 0, 145, 1, 2, "MKVN1: 56.0F, 14.0mph"
 End:
 
 Object: 42.0681,-101.445
   Threshold: 999
   Color: 255 255 255
-  Text: -12, -12, 1, "52"
+  Text: -12, -12, 1, "53"
