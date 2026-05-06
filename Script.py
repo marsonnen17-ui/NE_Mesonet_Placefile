@@ -18,7 +18,7 @@ def create_placefile():
             
             # 1. Define IconFile FIRST (file ID, width, height, hotX, hotY, URL)
             # Using index 1 and a standard wind barb URL
-            f.write("IconFile: 1, 32, 32, 16, 16, \"https://github.com/marsonnen17-ui/Mesonet_Test/blob/main/WindBarb.jpg\"\n")
+            f.write("IconFile: 1, 32, 32, 16, 16, \"https://github.com/marsonnen17-ui/NE_Mesonet_Placefile/blob/main/WindBarb.jpg\"\n")
             
             # 2. Define Font SECOND
             f.write("Font: 1, 12, 1, \"Arial\"\n")
