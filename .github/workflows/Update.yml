@@ -29,6 +29,16 @@ jobs:
         run: |
           git config --global user.name "PlacefileBot"
           git config --global user.email "bot@github.com"
+          
+          # 1. Stage the new file
           git add CWOP_Full_ObsV1.txt
+          
+          # 2. Commit it (ignore if there are no actual data changes)
           git commit -m "Update placefile data" || exit 0
-          git push
+          
+          # 3. THE FIX: Catch up to GitHub's timeline
+          # This pulls recent changes and slides your new commit to the very end
+          git pull origin main --rebase
+          
+          # 4. Push the combined timeline back to GitHub
+          git push origin main
