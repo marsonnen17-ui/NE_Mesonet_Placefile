@@ -1,66 +1,78 @@
 import requests
-import os
+from datetime import datetime
 
-# Configuration
-URL = "https://mesonet.agron.iastate.edu/api/1/currents.json?network=NE_DCP"
-OUTPUT_FILE = "NE_Mesonet_V1.txt"
+# --- AUTHORIZED CONFIG ---
+TOKEN = "024e1e15e3ad4650a5d36c5b37fe3095"
+NETWORK = "65"  # CWOP Network
+FILENAME = "CWOP_Full_ObsV1.txt"
+ICON_URL = "https://raw.githubusercontent.com/marsonnen17-ui/Mesonet_Test/main/wind_barbs_V3_64.png"
 
-def create_placefile():
+# Priority Stations
+TARGET_STIDS = ["E7235", "G4507", "C9774", "E7290", "D4989", "E3958"]
+
+API_URL = f"https://api.synopticdata.com/v2/stations/latest?token={TOKEN}&networks={NETWORK}&units=english"
+
+def get_barb_index(wspd_mph):
+    """Maps MPH to the correct index in the V16 PNG grid."""
+    wspd_kts = float(wspd_mph) * 0.868976
+    if wspd_kts < 2.5:
+        return 1
+    index = int((wspd_kts + 2.5) // 5) + 1
+    return min(index, 20)
+
+def build_placefile():
     try:
-        response = requests.get(URL, timeout=10)
-        data = response.json().get('data', [])
+        # Fetching network data
+        response = requests.get(API_URL, timeout=20)
+        data = response.json()
+        all_stations = data.get('STATION', [])
 
-        with open(OUTPUT_FILE, "w") as f:
-            # --- STRICT PLACEFILE HEADER ORDER ---
-            f.write("Title: NE Mesonet (Wind Barbs)\n")
+        # Filter post-API for your specific locations
+        filtered_stations = [s for s in all_stations if s.get('STID') in TARGET_STIDS]
+
+        with open(FILENAME, "w", encoding="utf-8") as f:
+            # HEADER
+            f.write("Title: NE CWOP - Full Observations\n")
             f.write("Refresh: 5\n")
             f.write("Threshold: 999\n")
-            
-            # 1. Define IconFile FIRST (file ID, width, height, hotX, hotY, URL)
-            # Using index 1 and a standard wind barb URL
-            f.write("IconFile: 1, 32, 32, 16, 16, \"https://github.com/marsonnen17-ui/NE_Mesonet_Placefile/blob/main/WindBarb.jpg\"\n")
-            
-            # 2. Define Font SECOND
-            f.write("Font: 1, 12, 1, \"Arial\"\n")
-            f.write("Font: 0, 12, 1, \"Arial\"\n\n")
+            f.write(f'IconFile: 1, 64, 61, 32, 32, "{ICON_URL}"\n\n')
 
-            for station in data:
-                lat, lon = station.get('lat'), station.get('lon')
-                stid = station.get('station')
-                temp = station.get('tmpf')
-                wind_kts = station.get('sknt', 0)
-                wind_dir = station.get('drct', 0)
+            for stn in filtered_stations:
+                lat, lon = stn.get('LATITUDE'), stn.get('LONGITUDE')
+                stid = stn.get('STID', 'UNK')
+                obs = stn.get('OBSERVATIONS', {})
 
-                # Skip if basic location data is missing
-                if any(v is None for v in [lat, lon, temp]):
-                    continue
+                # Extract Wind, Temp, and Dewpoint safely
+                wspd = obs.get('wind_speed_value_1', {}).get('value', 0)
+                wdir = obs.get('wind_direction_value_1', {}).get('value', 0)
+                gust = obs.get('wind_gust_value_1', {}).get('value', wspd)
+                temp = obs.get('air_temp_value_1', {}).get('value', "N/A")
+                dewp = obs.get('dew_point_temperature_value_1d', {}).get('value', "N/A")
 
-                # --- Wind Barb Calculation ---
-                # Ensure values are integers and within range
-                wind_kts = float(wind_kts) if wind_kts else 0
-                icon_index = int(round(wind_kts / 5.0))
-                #if icon_index > 25: icon_index = 25
-                if icon_index < 0: icon_index = 0
-                
-                wind_mph = round(wind_kts * 1.15, 1)
+                # Timestamp Handling
+                raw_time = obs.get('air_temp_value_1', {}).get('date_time')
+                if raw_time:
+                    dt = datetime.strptime(raw_time, "%Y-%m-%dT%H:%M:%SZ")
+                    display_time = dt.strftime("%H:%M") + "z"
+                else:
+                    display_time = "N/A"
 
-                # --- Station Object ---
-                # Use no spaces in the coordinates to ensure old parsers don't fail
-                f.write(f"Object: {lat},{lon}\n")
-                f.write("  Threshold: 999\n")
-                f.write("  Color: 255 255 255\n")
-                
-                # Text: offset-x, offset-y, fontNumber, "string"
-                f.write(f"  Text: -12, -12, 1, \"{int(temp)}\"\n")
-                
-                # Icon: offset-x, offset-y, angle, fileNumber, iconNumber, "hover"
-                # This line refers to IconFile 1 defined above
-                f.write(f"  Icon: 0, 0, {int(wind_dir)}, 1, {icon_index}, \"{stid}: {temp}F, {wind_mph}mph\"\n")
-                f.write("End:\n\n")
-                
-        print(f"Update successful. Placefile saved to {OUTPUT_FILE}")
+                if lat and lon:
+                    idx = get_barb_index(wspd)
+                    # Updated Label with Dewpoint
+                    label = (f"{stn.get('NAME', stid)}\\n"
+                             f"Temp: {temp}F / Dewp: {dewp}F\\n"
+                             f"Wind: {int(float(wspd)*1.151)} G {int(float(gust)*1.151)} mph\\n"
+                             f"Updated: {display_time}")
+
+                    f.write("Color: 255 255 255\n")
+                    f.write(f'Icon: {lat}, {lon}, {int(float(wdir))}, 1, {idx}, "{label}"\n')
+
+            f.write("\nEnd:\n")
+        print(f"Success! {FILENAME} updated with dewpoint data.")
+        print(f"Success! Grabbed {len(all_stations)} stations, filtered down to {len(filtered_stations)}.")
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Script Error: {e}")
 
 if __name__ == "__main__":
-    create_placefile()
+    build_placefile()
