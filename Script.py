@@ -5,20 +5,36 @@ from datetime import datetime
 TOKEN = "024e1e15e3ad4650a5d36c5b37fe3095"
 NETWORK = "65"  # CWOP Network
 FILENAME = "CWOP_Full_ObsV1.txt"
-ICON_URL = "https://raw.githubusercontent.com/marsonnen17-ui/NE_Mesonet_Placefile/main/wind_barbs_V3_64.png"
+ICON_URL = "https://raw.githubusercontent.com/marsonnen17-ui/NE_Mesonet_Placefile/main/wind_barbs_V4_64.png"
 
 # Priority Stations
 TARGET_STIDS = ["E7235", "G4507", "C9774", "E7290", "D4989", "E3958"]
 
 API_URL = f"https://api.synopticdata.com/v2/stations/latest?token={TOKEN}&networks={NETWORK}&units=english"
 
-def get_barb_index(wspd_mph):
-    """Maps MPH to the correct index in the V16 PNG grid."""
-    wspd_kts = float(wspd_mph) * 0.868976
-    if wspd_kts < 2.5:
+def get_barb_index(wind_speed_value_1):
+    """
+    Maps MPH to knots, then to the correct index.
+    0-4 knots = Index 1 (Calm)
+    5-9 knots = Index 2 (5kts)
+    10-14 knots = Index 3 (10kts)
+    """
+    try:
+        # 1. Convert MPH to Knots
+        wspd_kts = float(wind_speed_value_1) * 0.868976
+
+        # 2. Force Calm for anything 0-4 knots
+        if wspd_kts < 4.5:
+            return 1  # Index 1 is the Circle
+
+        # 3. Calculate Index (The +1 ensures we skip the blank Index 0)
+        # For 13 knots (15mph): (13 + 2.5) // 5 = 3.  3 + 1 = 4.
+        index = int((wspd_kts + 2.5) // 5) + 1
+
+        return min(index, 21)
+    except:
         return 1
-    index = int((wspd_kts + 2.5) // 5) + 1
-    return min(index, 20)
+
 
 def build_placefile():
     try:
